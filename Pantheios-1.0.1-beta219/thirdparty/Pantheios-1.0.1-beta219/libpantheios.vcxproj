@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54D717F2-752F-D9D2-397D-8DD5A36C4D97}</ProjectGuid>
+    <ProjectName>libpantheios</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\stlsoft-1.10.1\include;$(SolutionDir)thirdparty\b64-1.4.2\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\stlsoft-1.10.1\include;$(SolutionDir)thirdparty\b64-1.4.2\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\backends\be.lrsplit.c" />
+    <ClCompile Include="src\backends\be.N.c" />
+    <ClCompile Include="src\backends\bec.ACE.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.COMErrorObject.cpp" />
+    <ClCompile Include="src\backends\bec.fail.c" />
+    <ClCompile Include="src\backends\bec.file.cpp" />
+    <ClCompile Include="src\backends\bec.fprintf.cpp" />
+    <ClCompile Include="src\backends\bec.null.c" />
+    <ClCompile Include="src\backends\bec.speech.cpp" />
+    <ClCompile Include="src\backends\bec.syslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.test.cpp" />
+    <ClCompile Include="src\backends\bec.WindowsConsole.cpp" />
+    <ClCompile Include="src\backends\bec.WindowsDebugger.cpp" />
+    <ClCompile Include="src\backends\bec.WindowsEventLog.cpp" />
+    <ClCompile Include="src\backends\bec.WindowsMessageBox.cpp" />
+    <ClCompile Include="src\backends\bec.WindowsSyslog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.ACE.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.COMErrorObject.c" />
+    <ClCompile Include="src\backends\bel\bel.fail.c" />
+    <ClCompile Include="src\backends\bel\bel.file.c" />
+    <ClCompile Include="src\backends\bel\bel.fprintf.c" />
+    <ClCompile Include="src\backends\bel\bel.null.c" />
+    <ClCompile Include="src\backends\bel\bel.speech.c" />
+    <ClCompile Include="src\backends\bel\bel.syslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.test.c" />
+    <ClCompile Include="src\backends\bel\bel.WindowsConsole.c" />
+    <ClCompile Include="src\backends\bel\bel.WindowsDebugger.c" />
+    <ClCompile Include="src\backends\bel\bel.WindowsEventLog.c" />
+    <ClCompile Include="src\backends\bel\bel.WindowsMessageBox.c" />
+    <ClCompile Include="src\backends\bel\bel.WindowsSyslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.ACE.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.COMErrorObject.c" />
+    <ClCompile Include="src\backends\ber\ber.fail.c" />
+    <ClCompile Include="src\backends\ber\ber.file.c" />
+    <ClCompile Include="src\backends\ber\ber.fprintf.c" />
+    <ClCompile Include="src\backends\ber\ber.null.c" />
+    <ClCompile Include="src\backends\ber\ber.speech.c" />
+    <ClCompile Include="src\backends\ber\ber.syslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.test.c" />
+    <ClCompile Include="src\backends\ber\ber.WindowsConsole.c" />
+    <ClCompile Include="src\backends\ber\ber.WindowsDebugger.c" />
+    <ClCompile Include="src\backends\ber\ber.WindowsEventLog.c" />
+    <ClCompile Include="src\backends\ber\ber.WindowsMessageBox.c" />
+    <ClCompile Include="src\backends\ber\ber.WindowsSyslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.ACE.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.COMErrorObject.c" />
+    <ClCompile Include="src\backends\be\be.fail.c" />
+    <ClCompile Include="src\backends\be\be.file.c" />
+    <ClCompile Include="src\backends\be\be.fprintf.c" />
+    <ClCompile Include="src\backends\be\be.null.c" />
+    <ClCompile Include="src\backends\be\be.speech.c" />
+    <ClCompile Include="src\backends\be\be.syslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.test.c" />
+    <ClCompile Include="src\backends\be\be.WindowsConsole.c" />
+    <ClCompile Include="src\backends\be\be.WindowsDebugger.c" />
+    <ClCompile Include="src\backends\be\be.WindowsEventLog.c" />
+    <ClCompile Include="src\backends\be\be.WindowsMessageBox.c" />
+    <ClCompile Include="src\backends\be\be.WindowsSyslog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\core\api.cpp" />
+    <ClCompile Include="src\core\api.deprecated.c" />
+    <ClCompile Include="src\core\api.exitprocess.cpp" />
+    <ClCompile Include="src\core\api.logputs.cpp" />
+    <ClCompile Include="src\core\auto.cpp" />
+    <ClCompile Include="src\core\logprintf.c" />
+    <ClCompile Include="src\frontends\fe.all.c" />
+    <ClCompile Include="src\frontends\fe.fail.c" />
+    <ClCompile Include="src\frontends\fe.N.c" />
+    <ClCompile Include="src\frontends\fe.null.c" />
+    <ClCompile Include="src\frontends\fe.simple.c" />
+    <ClCompile Include="src\frontends\fe.WindowsRegistry.cpp" />
+    <ClCompile Include="src\inserters\args.cpp" />
+    <ClCompile Include="src\inserters\b64.cpp" />
+    <ClCompile Include="src\inserters\blob.cpp" />
+    <ClCompile Include="src\inserters\boolean.cpp" />
+    <ClCompile Include="src\inserters\hostid.cpp" />
+    <ClCompile Include="src\inserters\integer.cpp" />
+    <ClCompile Include="src\inserters\interval.cpp" />
+    <ClCompile Include="src\inserters\m2w.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\inserters\pointer.cpp" />
+    <ClCompile Include="src\inserters\processid.cpp" />
+    <ClCompile Include="src\inserters\real.cpp" />
+    <ClCompile Include="src\inserters\slice.cpp" />
+    <ClCompile Include="src\inserters\stream_character.cpp" />
+    <ClCompile Include="src\inserters\threadid.cpp" />
+    <ClCompile Include="src\inserters\w2m.cpp" />
+    <ClCompile Include="src\inserters\exception.cpp" />
+    <ClCompile Include="src\util\bailout.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\util\be.context.cpp" />
+    <ClCompile Include="src\util\be.parse.cpp" />
+    <ClCompile Include="src\util\core.apidefs.cpp" />
+    <ClCompile Include="src\util\date_elements_to_string.c" />
+    <ClCompile Include="src\util\hostname.c" />
+    <ClCompile Include="src\util\init_code_strings.c" />
+    <ClCompile Include="src\util\processid.c" />
+    <ClCompile Include="src\util\severity_strings.c" />
+    <ClCompile Include="src\util\snprintf.c" />
+    <ClCompile Include="src\util\strdup.c" />
+    <ClCompile Include="src\util\strnlen.cpp" />
+    <ClCompile Include="src\util\threadid.c" />
+    <ClCompile Include="src\util\time.cpp" />
+    <ClCompile Include="src\util\util.strnlen.c" />
+    <None Include="include\pantheios\internal\generated\log_functions.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\pantheios\backend.h" />
+    <ClInclude Include="include\pantheios\frontend.h" />
+    <ClInclude Include="include\pantheios\init_codes.h" />
+    <ClInclude Include="include\pantheios\inserters\args.hpp" />
+    <ClInclude Include="include\pantheios\inserters\b64.hpp" />
+    <ClInclude Include="include\pantheios\inserters\blob.hpp" />
+    <ClInclude Include="include\pantheios\inserters\boolean.hpp" />
+    <ClInclude Include="include\pantheios\inserters\exception.hpp" />
+    <ClInclude Include="include\pantheios\inserters\fmt.hpp" />
+    <ClInclude Include="include\pantheios\inserters\hostid.hpp" />
+    <ClInclude Include="include\pantheios\inserters\integer.hpp" />
+    <ClInclude Include="include\pantheios\inserters\interval.hpp" />
+    <ClInclude Include="include\pantheios\inserters\pointer.hpp" />
+    <ClInclude Include="include\pantheios\inserters\processid.hpp" />
+    <ClInclude Include="include\pantheios\inserters\real.hpp" />
+    <ClInclude Include="include\pantheios\inserters\slice.hpp" />
+    <ClInclude Include="include\pantheios\inserters\stream_character.hpp" />
+    <ClInclude Include="include\pantheios\inserters\threadid.hpp" />
+    <ClInclude Include="include\pantheios\inserters\w2m.hpp" />
+    <ClInclude Include="include\pantheios\internal\generated\log_dispatch_functions.h" />
+    <ClInclude Include="include\pantheios\internal\generated\log_functions.h" />
+    <ClInclude Include="include\pantheios\internal\lean.h" />
+    <ClInclude Include="include\pantheios\internal\nox.h" />
+    <ClInclude Include="include\pantheios\internal\safestr.h" />
+    <ClInclude Include="include\pantheios\internal\shim_declarations.hpp" />
+    <ClInclude Include="include\pantheios\internal\slice.hpp" />
+    <ClInclude Include="include\pantheios\internal\stock_levels.hpp" />
+    <ClInclude Include="include\pantheios\internal\string_encoding.h" />
+    <ClInclude Include="include\pantheios\internal\threading.h" />
+    <ClInclude Include="include\pantheios\internal\winlean.h" />
+    <ClInclude Include="include\pantheios\pantheios.h" />
+    <ClInclude Include="include\pantheios\quality\contract.h" />
+    <ClInclude Include="include\pantheios\severity\levels.hpp" />
+    <ClInclude Include="include\pantheios\shims\access\string\core\pan_severity_t.hpp" />
+    <ClInclude Include="include\pantheios\shims\access\string\core\pan_slice_t.hpp" />
+    <ClInclude Include="include\pantheios\util\memory\auto_buffer_selector.hpp" />
+    <ClInclude Include="include\pantheios\util\string\snprintf.h" />
+    <ClInclude Include="include\pantheios\util\string\strdup.h" />
+    <ClInclude Include="include\pantheios\util\system\hostname.h" />
+    <ClInclude Include="include\pantheios\util\system\processid.h" />
+    <ClInclude Include="include\pantheios\util\system\threadid.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

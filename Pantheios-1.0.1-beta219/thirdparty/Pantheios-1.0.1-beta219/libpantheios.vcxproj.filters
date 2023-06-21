@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{722C7F42-1B5E-4D2E-9F25-90D4A20E564A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios">
+      <UniqueIdentifier>{B9E55206-806A-4D89-B2CF-AFEB1A5806BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\inserters">
+      <UniqueIdentifier>{C1B9B1E5-3AE0-455E-84FF-73BE05F4D28F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\internal">
+      <UniqueIdentifier>{953A851F-D822-4D5C-9557-5BF0E2E3C395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\quality">
+      <UniqueIdentifier>{181BAA52-831B-4480-83BC-00CF45B4EC8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\severity">
+      <UniqueIdentifier>{E67A67A8-6430-4525-BFFA-EBD232ADFFF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\shims">
+      <UniqueIdentifier>{748F7719-64E2-4630-9E57-77B826D5B23D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\shims\access">
+      <UniqueIdentifier>{C5AB3DA9-486F-4E34-81A3-2239DF1E8C64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\shims\access\string">
+      <UniqueIdentifier>{D9CECE57-5D97-4C4F-BF68-6F5288DEC705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\shims\access\string\core">
+      <UniqueIdentifier>{9E70538F-1E9F-462A-8A9C-BA04E055B0B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\util">
+      <UniqueIdentifier>{5AA295DA-FCB1-4E9F-9106-A2D6866BE7A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\util\memory">
+      <UniqueIdentifier>{6F79F8D4-4323-4CD2-9E5B-4C4AF2B4DC67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\util\string">
+      <UniqueIdentifier>{8F1EB9D4-F416-459B-BDD6-C71FC8AAB09A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\util\system">
+      <UniqueIdentifier>{DED7261D-D8CE-4C22-BF87-0BB900C3A735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>asm;asmx;bat;cpp;c;cc;cxx;def;hpj;idl;odl;r</Extensions>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{9B29FD57-EB15-4327-8093-EE1A7BD527F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\inserters">
+      <UniqueIdentifier>{1E04B109-4F7F-4F9A-8EE9-5D7862A21CDB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\pantheios\internal\generated">
+      <UniqueIdentifier>{0787e334-9f98-4e5a-97ca-dda90b7adcb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{b2de082e-465e-4a26-ad99-cdfa35a01d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backends">
+      <UniqueIdentifier>{b150a523-44ee-45b6-af60-c53e11f1041e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backends\be">
+      <UniqueIdentifier>{56ccdd52-21bf-40e9-bd70-1a7688cdf17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backends\bel">
+      <UniqueIdentifier>{63519fdd-891f-41f1-80e1-519d32ee2cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\backends\ber">
+      <UniqueIdentifier>{7ae5a97a-05af-4a49-b8e5-605214528c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\frontends">
+      <UniqueIdentifier>{43fca30d-9cd7-4a37-a6b4-9269c11c5308}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\api.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\api.deprecated.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\api.exitprocess.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\api.logputs.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\auto.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\logprintf.c">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\args.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\b64.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\blob.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\boolean.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\hostid.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\integer.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\interval.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\m2w.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\pointer.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\processid.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\real.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\slice.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\stream_character.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\threadid.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\w2m.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inserters\exception.cpp">
+      <Filter>src\inserters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\bailout.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\be.context.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\be.parse.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\core.apidefs.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\date_elements_to_string.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\hostname.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\init_code_strings.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\processid.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\severity_strings.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\snprintf.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\strdup.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\strnlen.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\threadid.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\time.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\util.strnlen.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be.lrsplit.c">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be.N.c">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.fail.c">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.null.c">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.syslog.c">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.ACE.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.COMErrorObject.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.file.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.fprintf.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.speech.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.test.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.WindowsConsole.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.WindowsDebugger.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.WindowsEventLog.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.WindowsMessageBox.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bec.WindowsSyslog.cpp">
+      <Filter>src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.ACE.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.COMErrorObject.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.fail.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.file.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.fprintf.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.null.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.speech.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.syslog.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.test.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.WindowsConsole.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.WindowsDebugger.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.WindowsEventLog.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.WindowsMessageBox.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\be\be.WindowsSyslog.c">
+      <Filter>src\backends\be</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.ACE.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.COMErrorObject.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.fail.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.file.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.fprintf.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.null.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.speech.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.syslog.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.test.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.WindowsConsole.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.WindowsDebugger.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.WindowsEventLog.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.WindowsMessageBox.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\bel\bel.WindowsSyslog.c">
+      <Filter>src\backends\bel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.ACE.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.COMErrorObject.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.fail.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.file.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.fprintf.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.null.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.speech.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.syslog.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.test.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.WindowsConsole.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.WindowsDebugger.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.WindowsEventLog.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.WindowsMessageBox.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backends\ber\ber.WindowsSyslog.c">
+      <Filter>src\backends\ber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontends\fe.all.c">
+      <Filter>src\frontends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontends\fe.fail.c">
+      <Filter>src\frontends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontends\fe.N.c">
+      <Filter>src\frontends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontends\fe.null.c">
+      <Filter>src\frontends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontends\fe.simple.c">
+      <Filter>src\frontends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontends\fe.WindowsRegistry.cpp">
+      <Filter>src\frontends</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\pantheios\backend.h">
+      <Filter>include\pantheios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\frontend.h">
+      <Filter>include\pantheios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\init_codes.h">
+      <Filter>include\pantheios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\args.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\b64.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\blob.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\boolean.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\exception.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\fmt.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\hostid.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\integer.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\interval.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\pointer.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\processid.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\real.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\slice.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\stream_character.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\threadid.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\inserters\w2m.hpp">
+      <Filter>include\pantheios\inserters</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\generated\log_dispatch_functions.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\generated\log_functions.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\lean.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\nox.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\safestr.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\shim_declarations.hpp">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\slice.hpp">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\stock_levels.hpp">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\string_encoding.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\threading.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\internal\winlean.h">
+      <Filter>include\pantheios\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\pantheios.h">
+      <Filter>include\pantheios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\quality\contract.h">
+      <Filter>include\pantheios\quality</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\severity\levels.hpp">
+      <Filter>include\pantheios\severity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\shims\access\string\core\pan_severity_t.hpp">
+      <Filter>include\pantheios\shims\access\string\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\shims\access\string\core\pan_slice_t.hpp">
+      <Filter>include\pantheios\shims\access\string\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\util\memory\auto_buffer_selector.hpp">
+      <Filter>include\pantheios\util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\util\string\snprintf.h">
+      <Filter>include\pantheios\util\string</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\util\string\strdup.h">
+      <Filter>include\pantheios\util\string</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\util\system\hostname.h">
+      <Filter>include\pantheios\util\system</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\util\system\processid.h">
+      <Filter>include\pantheios\util\system</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pantheios\util\system\threadid.h">
+      <Filter>include\pantheios\util\system</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\pantheios\internal\generated\log_functions.inl">
+      <Filter>include\pantheios\internal\generated</Filter>
+    </None>
+  </ItemGroup>
+</Project>
